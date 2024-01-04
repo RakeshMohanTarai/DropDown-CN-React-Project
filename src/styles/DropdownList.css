@@ -1,0 +1,46 @@
+.dropdown-list-container {
+  /* Add any additional styling for the container if needed */
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute items evenly in the row */
+}
+
+.dropdown-item {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width to fit three items in a row with a gap of 20px */
+  margin-bottom: 20px; /* Adjust the margin between rows */
+}
+
+.product-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-box:nth-child(odd) {
+  background: linear-gradient(to bottom right, #ffcc66, #ff9966); /* Gradient for odd-indexed boxes */
+}
+
+.product-box:nth-child(even) {
+  background: linear-gradient(to bottom right, #66ccff, #6699ff); /* Gradient for even-indexed boxes */
+}
+
+.product-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 16px;
+}
