@@ -14,7 +14,7 @@ function DropdownList() {
           >
             <div className="product-box">
               <div className="product-header">
-                <span className="product-name">{item.name}</span>
+                <span className="product-name" style={{color:'white'}}>{item.name}</span>
               </div>
               <img src={item.imageUrl} alt={item.name} />
             </div>
